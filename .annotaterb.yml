@@ -60,6 +60,4 @@
 :model_dir:
 - app/models
 :require: []
-:root_dir:
-- ''
- {}
+:root_dir: []
