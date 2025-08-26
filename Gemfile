@@ -49,4 +49,6 @@ group :development, :test do
   gem "annotaterb"
   gem 'rspec-rails', '~> 8.0.0'
   gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'shoulda-matchers'
 end
