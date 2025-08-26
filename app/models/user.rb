@@ -18,6 +18,11 @@
 class User < ApplicationRecord
     has_secure_password
 
+    # Validations
     validates :name, presence: true 
-    validates :email, presence: true, uniqueness: true 
+    validates :email, presence: true, uniqueness: true
+    validates :password_digest, presence: true
+    validates :created_at, presence: true
+    validates :updated_at, presence: true 
+    validates :password, length: { minimum: 6}, if: -> { password.present? }
 end
